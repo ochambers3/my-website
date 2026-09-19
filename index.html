@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owen Chambers</title>
+    <meta name="description" content="Owen Chambers — AI engineer working on agentic development systems, LLM evaluation, and AWS. MMath Computer Science, University of Waterloo.">
+    <link rel="canonical" href="https://owenchambers.ca/">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <h1>Owen Chambers</h1>
+            <p class="site-tagline">AI engineer &middot; agentic systems, evaluation, AWS</p>
+        </div>
+    </header>
+
+    <main class="page">
+        <ul class="contact">
+            <li><a href="mailto:mr.owen.chambers@gmail.com">mr.owen.chambers@gmail.com</a></li>
+            <li><a href="tel:+12047400123">(204) 740-0123</a></li>
+            <li><a href="https://github.com/ochambers3">github.com/ochambers3</a></li>
+            <li><a href="https://www.linkedin.com/in/owen-chambers33">LinkedIn</a></li>
+            <li><a href="https://owenchambers.ca">owenchambers.ca</a></li>
+        </ul>
+
+        <p class="lead">I build agentic software systems: agents that pull requirements, write and test code, judge whether a change matched the spec, and hand a real pull request to a developer. I have an MMath in Computer Science from the University of Waterloo, where I studied user-specific explanations of AI.</p>
+
+        <section>
+            <h2>Experience</h2>
+            <article class="entry">
+                <div class="entry-header">
+                    <h3>Software Developer</h3>
+                    <span class="meta">BrainRidge Consulting Inc &middot; Nov 2024&ndash;Present</span>
+                </div>
+                <p class="workstream">Multi-agent software delivery (internal)</p>
+                <ul>
+                    <li>Owned the evaluation, test, and git-delivery agents on a team building a spec-to-PR system on AWS Bedrock and the Anthropic API (team: 1 lead, 1 senior, 4 intermediate, 3 interns). The lead owned the orchestrator; I owned the agents that judged patches, ran tests, and created the pull request.</li>
+                    <li>Built a test agent with a pre-execution hook that ran the suite, classified failures by severity, and compared results to the generated diff and Jira/spec so the parent loop could choose the next agent and what context to pass.</li>
+                    <li>Implemented git handoff through the GitHub MCP server (commit, message, pull request) and loaded Jira requirements through the Atlassian MCP server before execution. Used Claude Code hooks, tools, and skills throughout.</li>
+                    <li>Mentored interns on implementation and Agile SDLC (no direct reports). The platform reached a working end-to-end flow; it was not production-deployed.</li>
+                </ul>
+                <p class="workstream">AWS Lambda / CDK modernization (major Canadian bank)</p>
+                <ul>
+                    <li>Designed a local, CSV-driven multi-agent workflow that clones a repo, cuts a Jira-named branch, updates an internal AWS CDK compliance library and Node.js runtime, optionally remediates vulnerabilities, then runs test and review agents on the diff.</li>
+                    <li>On reject: halt and append a structured note to a gitignored log, plus in-code comments for the developer. On approve: commit and push, then continue to the next application. Implemented with GitHub Copilot CLI and detailed skills/prompt envelopes.</li>
+                    <li>Used on 40+ of 65+ Lambda applications; about 75% time reduction on the upgrades (80+ hours saved personally); rolling the tool out to the consulting team.</li>
+                    <li>Took migrated applications through bank SDLC: delivery letters, lower-environment tests, performance environment, and production. The agent runs locally; production deploys remain human-owned.</li>
+                </ul>
+            </article>
+            <article class="entry">
+                <div class="entry-header">
+                    <h3>LLM Evaluation Contractor</h3>
+                    <span class="meta">Invisible Technologies &middot; May 2024&ndash;Oct 2024</span>
+                </div>
+                <ul>
+                    <li>Independent contractor, 40 hours/week, on evaluation pods producing demonstration traces and code critiques for large-model teams.</li>
+                    <li>Completed multi-step web tasks in an instrumented environment (search, select, checkout) so the action sequence could be recorded as training and eval data for computer-use agents.</li>
+                    <li>Ran model-generated programs in a sandboxed evaluator, reproduced failures, diagnosed errors, and submitted corrected implementations as labeled eval signal.</li>
+                </ul>
+            </article>
+            <article class="entry">
+                <div class="entry-header">
+                    <h3>Software Developer Intern</h3>
+                    <span class="meta">Technology Solve &middot; Oct 2020&ndash;Jan 2021</span>
+                </div>
+                <ul>
+                    <li>Engineered relational data models and optimized search and retrieval for an inventory tracking application.</li>
+                    <li>Analyzed web traffic and ran SEO work for mid-size enterprise clients, which coincided with a 12% increase in user engagement.</li>
+                </ul>
+            </article>
+            <article class="entry">
+                <div class="entry-header">
+                    <h3>Software Developer in Test</h3>
+                    <span class="meta">Feb 2019&ndash;July 2019</span>
+                </div>
+                <ul>
+                    <li>Recreated bugs and issues in fire-prediction software across operating-system versions and wrote detailed reproduction reports.</li>
+                    <li>Worked with the development team so timelines were met and issues were known and tracked.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <article class="entry">
+                <div class="entry-header">
+                    <h3>PETR</h3>
+                    <span class="meta">Personal &middot; TypeScript, Claude Agent SDK</span>
+                </div>
+                <p class="detail">Prepare, Execute, Test, Review: a CLI orchestrator that finds the next spec in a repo, implements it, runs tests, reviews the diff, and continues until a story/epic cap or a halt. Personal tooling built with the Claude Agent SDK; not a client product.</p>
+            </article>
+            <article class="entry">
+                <div class="entry-header">
+                    <h3>Anchor Events</h3>
+                    <span class="meta">Personal &middot; <a href="https://www.anchorevents.ca">anchorevents.ca</a></span>
+                </div>
+                <p class="detail">Solo sports-tourism site (Angular, Flask, PostgreSQL) that ingests events and returns city, league, and team itineraries. Ranking is rule-based. Live at <a href="https://www.anchorevents.ca">anchorevents.ca</a>.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <article class="entry">
+                <div class="entry-header">
+                    <h3>University of Waterloo</h3>
+                    <span class="meta">Waterloo, Ontario, Canada &middot; 2021&ndash;2023</span>
+                </div>
+                <p class="subtitle">MMath in Computer Science &mdash; 3.7/4.0</p>
+                <p class="detail">Thesis: User-specific explanations of AI systems attuned to psychological profiles: a user study.</p>
+            </article>
+            <article class="entry">
+                <div class="entry-header">
+                    <h3>Brandon University</h3>
+                    <span class="meta">Brandon, Manitoba, Canada &middot; 2016&ndash;2021</span>
+                </div>
+                <p class="subtitle">Honors B.Sc. Computer Science &mdash; 3.83/4.3</p>
+                <p class="detail">Thesis: Algorithmic Composition: Generative AI for Classical Music Synthesis.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Publications</h2>
+            <ol class="publications">
+                <li>O. Chambers, R. Cohen, M. R. Grossman, L. Hebert, and E. Awad, &ldquo;Mining user study data to judge the merit of a model for supporting user-specific explanations of ai systems&rdquo;, <em>Computational Intelligence</em>, vol. 40, no. 6, e70015, 2024.</li>
+                <li>O. Chambers, &ldquo;User-specific explanations of ai systems attuned to psychological profiles: A user study&rdquo;, 2023.</li>
+                <li>O. Chambers, R. Cohen, M. R. Grossman, and Q. Chen, &ldquo;Creating a user model to support user-specific explanations of ai systems&rdquo;, in <em>Adjunct Proceedings of the 30th ACM Conference on User Modeling, Adaptation and Personalization</em>, 2022, pp. 163&ndash;166.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Research</h2>
+            <article class="entry">
+                <div class="entry-header">
+                    <h3>User-specific Explanations of AI Systems</h3>
+                    <span class="meta">University of Waterloo Thesis</span>
+                </div>
+                <ul>
+                    <li>Designed and conducted a behavioral user study (N=150) that psychometrically profiled participants in order to model acceptance and rejection thresholds for AI-generated explanations.</li>
+                    <li>Trained and tested a PyTorch feedforward network on the study results. The model was statistically better than alternative methods at predicting whether a person would accept a given explanation.</li>
+                    <li>Used linear regression, logistic regression, and random forests on the same dataset to inspect how different models made that prediction.</li>
+                </ul>
+            </article>
+            <article class="entry">
+                <div class="entry-header">
+                    <h3>Predicting Off-target CRISPR Mutations</h3>
+                    <span class="meta">Deep-Learning for Biotechnology Course Project</span>
+                </div>
+                <ul>
+                    <li>Built a Siamese network in PyTorch that scored gRNA and DNA sequences in separate streams, then predicted off-target CRISPR edits from the difference of those representations.</li>
+                    <li>The dual-stream setup was a valid approach, but it did not beat the CNN baseline used in prior work. Class imbalance was a central issue: Cas9 errors are rare, so high overall accuracy is easy if the model always predicts &ldquo;no error.&rdquo;</li>
+                </ul>
+            </article>
+            <article class="entry">
+                <div class="entry-header">
+                    <h3>Tailoring Product Recommendations for Mobile Devices</h3>
+                    <span class="meta">Information Retrieval Course Project</span>
+                </div>
+                <ul>
+                    <li>Built a React Native app that pulled Amazon product images and descriptions onto a phone-sized layout.</li>
+                    <li>Ran a 20-person user study on how image size versus text volume affected product preference on mobile, then analyzed the results statistically.</li>
+                </ul>
+            </article>
+            <article class="entry">
+                <div class="entry-header">
+                    <h3>Generative AI in Music Composition</h3>
+                    <span class="meta">Brandon University Thesis</span>
+                </div>
+                <ul>
+                    <li>Extracted high-dimensional features from classical piano works and used vector embeddings to represent theme, tempo, cadence, and style.</li>
+                    <li>Wrote an algorithm that rearranged those pieces into new music according to a listener&rsquo;s preferences for speed and consistency.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <article class="entry">
+                <div class="entry-header">
+                    <h3>Claude Certified Architect &mdash; Foundations</h3>
+                    <span class="meta">September 2026</span>
+                </div>
+                <p class="detail">Credential for designing production-grade applications with Claude using Claude Code, the Claude Agent SDK, the Claude API, and MCP.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul class="skills">
+                <li><strong>Languages:</strong> TypeScript, Python, JavaScript, SQL, HTML, CSS</li>
+                <li><strong>AI / agents:</strong> Claude API, Claude Agent SDK, MCP, Claude Code hooks / tools / skills, GitHub Copilot CLI, AWS Bedrock, LLM evaluation</li>
+                <li><strong>Cloud &amp; data:</strong> AWS Lambda, AWS CDK, PostgreSQL, Flask, Angular, React / React Native</li>
+                <li><strong>Research:</strong> PyTorch, scikit-learn, NumPy, Pandas</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>owenchambers.ca</p>
+    </footer>
+</body>
+
+</html>

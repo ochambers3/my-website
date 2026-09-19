@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #1a1a1a;
+    background: #fafafa;
+    line-height: 1.5;
+}
+
+a {
+    color: #2a5a8a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1a3d5c;
+    text-decoration: underline;
+}
+
+.site-header {
+    border-bottom: 1px solid #ddd;
+    background: #fafafa;
+}
+
+.site-header-inner {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem;
+}
+
+.site-header h1 {
+    margin: 0 0 0.35rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.site-tagline {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.page {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
+}
+
+.contact {
+    list-style: none;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 1rem;
+    font-size: 0.9rem;
+}
+
+.lead {
+    margin: 0 0 1.75rem;
+    font-size: 1.05rem;
+    color: #333;
+}
+
+.page section {
+    margin-bottom: 1.75rem;
+}
+
+.page section > h2 {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.4rem;
+}
+
+.entry {
+    margin-bottom: 1.15rem;
+}
+
+.entry-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.25rem 1rem;
+}
+
+.entry h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.meta {
+    font-size: 0.85rem;
+    color: #666;
+    white-space: nowrap;
+}
+
+.subtitle {
+    margin: 0.15rem 0 0;
+    font-size: 0.95rem;
+}
+
+.detail {
+    margin: 0.35rem 0 0;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.entry ul,
+.prose ul {
+    margin: 0.4rem 0 0;
+    padding-left: 1.2rem;
+}
+
+.entry li,
+.prose li {
+    margin-bottom: 0.25rem;
+    font-size: 0.92rem;
+    color: #333;
+}
+
+.workstream {
+    margin: 0.65rem 0 0.15rem;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #444;
+}
+
+.skills {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 0.35rem;
+    font-size: 0.92rem;
+}
+
+.publications {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.publications li {
+    margin-bottom: 0.65rem;
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+.site-footer {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 0 1.5rem 2.5rem;
+    font-size: 0.82rem;
+    color: #777;
+}
+
+@media (max-width: 520px) {
+    .entry-header {
+        flex-direction: column;
+        gap: 0.1rem;
+    }
+
+    .meta {
+        white-space: normal;
+    }
+}

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Owen Chambers</title>
-    <meta name="description" content="Owen Chambers — AI engineer working on agentic development systems, LLM evaluation, and AWS. MMath Computer Science, University of Waterloo.">
+    <meta name="description" content="Owen Chambers — AI engineer working on agentic development systems, LLM evaluation, and AWS. MMath in Computer Science, University of Waterloo; Honours B.Sc. in Computer Science, Brandon University.">
     <link rel="canonical" href="https://owenchambers.ca/">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -27,7 +27,7 @@
             <li><a href="https://owenchambers.ca">owenchambers.ca</a></li>
         </ul>
 
-        <p class="lead">I build agentic software systems: agents that pull requirements, write and test code, judge whether a change matched the spec, and hand a real pull request to a developer. I have an MMath in Computer Science from the University of Waterloo, where I studied user-specific explanations of AI.</p>
+        <p class="lead">I build agentic software systems: agents that pull requirements, write and test code, judge whether a change matched the spec, and hand a real pull request to a developer. I hold an MMath in Computer Science from the University of Waterloo and an Honours B.Sc. in Computer Science from Brandon University, where my work focused on user-specific explanations of AI and generative AI for classical music synthesis.</p>
 
         <section>
             <h2>Experience</h2>
@@ -38,17 +38,17 @@
                 </div>
                 <p class="workstream">Multi-agent software delivery (internal)</p>
                 <ul>
-                    <li>Owned the evaluation, test, and git-delivery agents on a team building a spec-to-PR system on AWS Bedrock and the Anthropic API (team: 1 lead, 1 senior, 4 intermediate, 3 interns). The lead owned the orchestrator; I owned the agents that judged patches, ran tests, and created the pull request.</li>
+                    <li>Owned the evaluation, test, spec injestion, and git-delivery agents on a team building a spec-to-PR system on AWS Bedrock and the Anthropic API.</li>
                     <li>Built a test agent with a pre-execution hook that ran the suite, classified failures by severity, and compared results to the generated diff and Jira/spec so the parent loop could choose the next agent and what context to pass.</li>
                     <li>Implemented git handoff through the GitHub MCP server (commit, message, pull request) and loaded Jira requirements through the Atlassian MCP server before execution. Used Claude Code hooks, tools, and skills throughout.</li>
-                    <li>Mentored interns on implementation and Agile SDLC (no direct reports). The platform reached a working end-to-end flow; it was not production-deployed.</li>
+                    <li>Mentored interns on implementation and Agile SDLC.</li>
                 </ul>
                 <p class="workstream">AWS Lambda / CDK modernization (major Canadian bank)</p>
                 <ul>
                     <li>Designed a local, CSV-driven multi-agent workflow that clones a repo, cuts a Jira-named branch, updates an internal AWS CDK compliance library and Node.js runtime, optionally remediates vulnerabilities, then runs test and review agents on the diff.</li>
                     <li>On reject: halt and append a structured note to a gitignored log, plus in-code comments for the developer. On approve: commit and push, then continue to the next application. Implemented with GitHub Copilot CLI and detailed skills/prompt envelopes.</li>
-                    <li>Used on 40+ of 65+ Lambda applications; about 75% time reduction on the upgrades (80+ hours saved personally); rolling the tool out to the consulting team.</li>
-                    <li>Took migrated applications through bank SDLC: delivery letters, lower-environment tests, performance environment, and production. The agent runs locally; production deploys remain human-owned.</li>
+                    <li>Used on 65+ Lambda applications; about 75% time reduction on the upgrades (80+ hours saved personally); rolling the tool out to the other teams.</li>
+                    <li>Took migrated applications through bank SDLC: delivery letters, lower-environment tests, performance environment, and production.</li>
                 </ul>
             </article>
             <article class="entry">
@@ -67,20 +67,12 @@
                     <h3>Software Developer Intern</h3>
                     <span class="meta">Technology Solve &middot; Oct 2020&ndash;Jan 2021</span>
                 </div>
-                <ul>
-                    <li>Engineered relational data models and optimized search and retrieval for an inventory tracking application.</li>
-                    <li>Analyzed web traffic and ran SEO work for mid-size enterprise clients, which coincided with a 12% increase in user engagement.</li>
-                </ul>
             </article>
             <article class="entry">
                 <div class="entry-header">
                     <h3>Software Developer in Test</h3>
                     <span class="meta">Feb 2019&ndash;July 2019</span>
                 </div>
-                <ul>
-                    <li>Recreated bugs and issues in fire-prediction software across operating-system versions and wrote detailed reproduction reports.</li>
-                    <li>Worked with the development team so timelines were met and issues were known and tracked.</li>
-                </ul>
             </article>
         </section>
 
@@ -91,7 +83,7 @@
                     <h3>PETR</h3>
                     <span class="meta">Personal &middot; TypeScript, Claude Agent SDK</span>
                 </div>
-                <p class="detail">Prepare, Execute, Test, Review: a CLI orchestrator that finds the next spec in a repo, implements it, runs tests, reviews the diff, and continues until a story/epic cap or a halt. Personal tooling built with the Claude Agent SDK; not a client product.</p>
+                <p class="detail">Prepare, Execute, Test, Review: a CLI orchestrator that finds the next spec in a repo, implements it, runs tests, reviews the diff, and continues until a story/epic cap or a halt. Personal tooling built with the Claude Agent SDK;</p>
             </article>
             <article class="entry">
                 <div class="entry-header">
